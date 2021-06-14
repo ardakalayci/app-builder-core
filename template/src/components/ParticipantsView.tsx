@@ -61,7 +61,7 @@ const ParticipantView = (props: any) => {
           style={style.backIcon}
           source={{uri: icons.backBtn}}
         /> */}
-        <Text style={style.heading}>Participants</Text>
+        <Text style={style.heading}>Katılımcılar</Text>
       </TouchableOpacity>
       <ScrollView style={{flex: 1}}>
         <MinUidConsumer>
@@ -97,7 +97,7 @@ const ParticipantView = (props: any) => {
                         {userList[user.uid]
                           ? userList[user.uid].name + ' '
                           : String(user.uid)[0] === '1'
-                            ? 'PSTN User ' : 'User '}
+                            ? 'PSTN User ' : 'Katılımcı '}
                       </Text>
                       {userList[user.uid]?.type !== UserType.ScreenShare ? (
                         <View style={style.participantButtonContainer}>

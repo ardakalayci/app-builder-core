@@ -31,7 +31,7 @@ const ChatBubble = (props: channelMessage) => {
     <View>
       <View style={isLocal ? style.chatSenderViewLocal : style.chatSenderView}>
         <Text style={isLocal ? style.timestampTextLocal : style.timestampText}>
-          {userList[uid] ? userList[uid].name : 'User'} | {time + ' '}
+          {userList[uid] ? userList[uid].name : 'Katılımcı'} | {time + ' '}
         </Text>
       </View>
       <View

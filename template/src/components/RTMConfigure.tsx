@@ -104,7 +104,7 @@ const RtmConfigure = (props: any) => {
             return {
               ...prevState,
               [data.uid]: {
-                name: attr?.attributes?.name || 'User',
+                name: attr?.attributes?.name || 'Katılımcı',
                 type: UserType.Normal,
                 screenUid: parseInt(attr?.attributes?.screenUid),
               },
@@ -217,7 +217,7 @@ const RtmConfigure = (props: any) => {
       token: rtcProps.rtm,
     });
     await engine.current.setLocalUserAttributes([
-      {key: 'name', value: name || 'User'},
+      {key: 'name', value: name || 'Katılımcı'},
       {key: 'screenUid', value: String(rtcProps.screenShareUid)},
     ]);
     await engine.current.joinChannel(rtcProps.channel);
@@ -255,7 +255,7 @@ const RtmConfigure = (props: any) => {
               return {
                 ...prevState,
                 [member.uid]: {
-                  name: attr?.attributes?.name || 'User',
+                  name: attr?.attributes?.name || 'Katılımcı',
                   type: UserType.Normal,
                   screenUid: parseInt(attr?.attributes?.screenUid),
                 },

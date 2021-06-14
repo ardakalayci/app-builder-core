@@ -170,7 +170,7 @@ const GridVideo = (props: GridVideoProps) => {
                         : users[ridx * dims.c + cidx].uid === 1
                           ? (userList[localUid]?.name + " ekranı ").slice(0, 20)
                           : String(users[ridx * dims.c + cidx].uid)[0] === '1' ?
-                            'PSTN User ' : 'User '}
+                            'PSTN User ' : 'Katılımcı '}
                   </Text>
                   {/* </View> */}
                   {/* {console.log(

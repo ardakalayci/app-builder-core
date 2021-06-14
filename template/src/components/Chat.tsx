@@ -217,7 +217,7 @@ const Chat = (props: any) => {
                             <Text style={style.participantText}>
                               {userList[user.uid]
                                 ? userList[user.uid].name + ' '
-                                : 'User '}
+                                : 'Katılımcı '}
                             </Text>
                             <Text style={{color: $config.PRIMARY_FONT_COLOR}}>{`>`}</Text>
                           </TouchableOpacity>
@@ -238,7 +238,7 @@ const Chat = (props: any) => {
                 selectedUsername={
                   userList[selectedUser.uid]
                     ? userList[selectedUser.uid].name + ' '
-                    : 'User '
+                    : 'Katılımcı '
                 }
               />
               <KeyboardAvoidingView
