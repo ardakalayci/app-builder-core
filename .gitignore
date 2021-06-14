@@ -102,3 +102,4 @@ template/package-lock.json
 
 # logflies
 *.log
+template/agora-rn-uikit/
