@@ -79,18 +79,18 @@ const Join = (props: joinProps) => {
               value={phrase}
               onChangeText={(text) => onChangePhrase(text)}
               onSubmitEditing={() => startCall()}
-              placeholder="Meeting ID"
+              placeholder="Toplantı kimliği"
             />
             <View style={{height: 10}} />
             <PrimaryButton
               disabled={phrase === ''}
               onPress={() => startCall()}
-              text={'Enter Meeting'}
+              text={'Toplantıya katıl'}
             />
             <HorizontalRule />
             <SecondaryButton
               onPress={() => createMeeting()}
-              text={'Create a meeting'}
+              text={'Toplantı oluştur'}
             />
             {shouldAuthenticate ? (
               <LogoutButton setError={setError} /> //setError not available in logout?

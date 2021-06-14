@@ -168,7 +168,7 @@ const GridVideo = (props: GridVideoProps) => {
                           20,
                         ) + ' '
                         : users[ridx * dims.c + cidx].uid === 1
-                          ? (userList[localUid]?.name + "'s screen ").slice(0, 20)
+                          ? (userList[localUid]?.name + " ekranı ").slice(0, 20)
                           : String(users[ridx * dims.c + cidx].uid)[0] === '1' ?
                             'PSTN User ' : 'User '}
                   </Text>

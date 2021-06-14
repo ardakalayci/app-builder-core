@@ -42,7 +42,7 @@ type VideoProfile =
   | '720p_5'
   | '720p_6';
 
-interface ConfigInterface {
+interface ConfigIanterface {
   PRODUCT_ID: string;
   APP_NAME: string;
   LOGO: string;
@@ -72,4 +72,4 @@ interface ConfigInterface {
   SLACK_CLIENT_ID: string;
   APPLE_CLIENT_ID: string;
 }
-declare var $config: ConfigInterface;
+declare var $config: ConfigIanterface;

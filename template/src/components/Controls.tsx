@@ -76,7 +76,7 @@ const Controls = (props: any) => {
               marginTop: 5,
               color: $config.PRIMARY_COLOR,
             }}>
-            Audio
+            Mikrofon
           </Text>
         </View>
         <View style={{alignSelf: 'center'}}>
@@ -106,7 +106,7 @@ const Controls = (props: any) => {
                   marginTop: 5,
                   color: $config.PRIMARY_COLOR,
                 }}>
-                Share
+                Paylaş
               </Text>
             </View>
           ) : (
@@ -128,7 +128,7 @@ const Controls = (props: any) => {
                   marginTop: 5,
                   color: $config.PRIMARY_COLOR,
                 }}>
-                Record
+                Kayıt
               </Text>
             </View>
           ) : (
@@ -185,7 +185,7 @@ const Controls = (props: any) => {
         <View style={{alignSelf: 'center'}}>
           <Endcall />
           <Text style={{textAlign: 'center', marginTop: 5, color: '#FD0845'}}>
-            Hang Up
+            Görüşmeyi Sonlandır
           </Text>
         </View>
       </View>

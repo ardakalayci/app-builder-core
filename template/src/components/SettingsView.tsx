@@ -31,7 +31,7 @@ const SettingsView = (props: any) => {
         Platform.OS === 'web' ? style.settingsView : style.settingsViewNative
       }>
       <View style={style.main}>
-        <Text style={style.heading}>Select Input Device</Text>
+        <Text style={style.heading}>Varsayılan Cihaz Seç</Text>
         <View style={style.popupPickerHolder}>
           <SelectDevice />
         </View>

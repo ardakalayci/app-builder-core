@@ -127,7 +127,7 @@ const Create = () => {
                 value={roomTitle}
                 onChangeText={(text) => onChangeRoomTitle(text)}
                 onSubmitEditing={() => createRoom()}
-                placeholder="Name your meeting"
+                placeholder="Toplantıya bir isim verin"
               />
               <View style={{paddingVertical: 10}}>
                 <View style={style.checkboxHolder}>
@@ -136,10 +136,10 @@ const Create = () => {
                     onValueChange={setHostControlCheckbox}
                   />
                   <Text style={style.checkboxTitle}>
-                    Restrict Host Controls{' '}
+                    Host yetkileri{' '}
                     {!hostControlCheckbox
-                      ? '(Everyone is a Host)'
-                      : '(Separate host link)'}
+                      ? '(Herkes host yetkisine sahip olsun)'
+                      : '(Sadece link üzerinden gelenler host olsun )'}
                   </Text>
                 </View>
                 {$config.PSTN ? (
@@ -159,12 +159,12 @@ const Create = () => {
               <PrimaryButton
                 disabled={roomTitle === '' || loading}
                 onPress={() => createRoom()}
-                text={loading ? 'Loading...' : 'Create Meeting'}
+                text={loading ? 'Oluşturuluyor' : 'Toplantı Oluştur'}
               />
               <HorizontalRule />
               <SecondaryButton
                 onPress={() => history.push('/join')}
-                text={'Meeting ID or URL'}
+                text={'Toplantı kimliği veya url giriniz'}
               />
             </View>
           </View>

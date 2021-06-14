@@ -169,7 +169,7 @@ const PinnedVideo = () => {
                               : userList[user.uid]
                                 ? userList[user.uid].name.slice(0, 20) + ' '
                                 : user.uid === 1
-                                  ? (userList[localUid]?.name + "'s screen ").slice(0, 20)
+                                  ? (userList[localUid]?.name + " ekranı ").slice(0, 20)
                                   : String(user.uid)[0] === '1' ?
                                     'PSTN User ' : 'User '}
                           </Text>
@@ -230,7 +230,7 @@ const PinnedVideo = () => {
                     : userList[maxUsers[0].uid]
                     ? userList[maxUsers[0].uid].name.slice(0,20) + ' '
                     : maxUsers[0].uid === 1
-                    ? (userList[localUid].name + "'s screen ").slice(0,20)
+                    ? (userList[localUid].name + " ekranı ").slice(0,20)
                     : 'User '}
                 </Text>
               </View>

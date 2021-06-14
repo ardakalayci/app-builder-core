@@ -87,8 +87,8 @@ const ParticipantView = (props: any) => {
                     <View style={style.participantContainer} key={user.uid}>
                       <Text style={style.participantText}>
                         {userList[localUid]
-                          ? userList[localUid].name + "'s screenshare "
-                          : 'Your screenshare '}
+                          ? userList[localUid].name + " ekranı"
+                          : 'Senin Ekranın '}
                       </Text>
                     </View>
                   ) : (

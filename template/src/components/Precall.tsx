@@ -135,7 +135,7 @@ const Precall = (props: any) => {
               {/* <View style={{flex: 1}}> */}
               <Text
                 style={[style.subHeading, {color: $config.PRIMARY_FONT_COLOR}]}>
-                Select Input Device
+                Giriş cihazı seç
               </Text>
               {/* </View> */}
               <View style={{height: 20}} />

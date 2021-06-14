@@ -106,7 +106,7 @@ const Chat = (props: any) => {
             </View>
           ) : null}
           <Text style={groupActive ? style.groupTextActive : style.groupText}>
-            Group
+            Tümü
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -128,7 +128,7 @@ const Chat = (props: any) => {
             </View>
           ) : null}
           <Text style={!groupActive ? style.groupTextActive : style.groupText}>
-            Private
+            Özel
           </Text>
         </TouchableOpacity>
       </View>

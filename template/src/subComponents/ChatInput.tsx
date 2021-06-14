@@ -73,7 +73,7 @@ const ChatInput = (props: any) => {
           }
           // UIManager.focus(inputRef.current);
         }}
-        placeholder="Type your message.."
+        placeholder="Mesajınızı giriniz ..."
         placeholderTextColor={$config.PRIMARY_FONT_COLOR}
         autoCorrect={false}
       />
