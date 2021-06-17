@@ -156,7 +156,7 @@ PSTN Pin: ${pstn.dtmf}`)
           <View style={{ width: '80%' }}>
             <Text style={style.urlTitle}>
             {$config.FRONTEND_ENDPOINT || platform === 'web' ? hostControlCheckbox
-                ? 'Host URL' : 'Meeting URL'
+                ? 'Host Link' : 'Katılımcı Link'
                 : hostControlCheckbox ? 'Host ID' : 'Meeting ID'}
             </Text>
             <View style={style.urlHolder}>
@@ -215,7 +215,7 @@ PSTN Pin: ${pstn.dtmf}`)
         <View style={{height: 10}} />
         <SecondaryButton
           onPress={() => copyToClipboard()}
-          text={'Copy invite to clipboard'}
+          text={'Davetiyeyi kopyala'}
         />
       </View>
       {/* {dim[0] > dim[1] + 150 ? (
