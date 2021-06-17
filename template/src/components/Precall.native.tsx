@@ -64,7 +64,7 @@ const Precall = (props: any) => {
               }
             }}
             onSubmitEditing={() => {}}
-            placeholder="Display Name"
+            placeholder="İsminiz"
           />
         </KeyboardAvoidingView>
       ) : (
@@ -77,7 +77,7 @@ const Precall = (props: any) => {
               }
             }}
             onSubmitEditing={() => {}}
-            placeholder="Display Name"
+            placeholder="İsminiz"
           />
         </View>
       )}
@@ -99,7 +99,7 @@ const Precall = (props: any) => {
           {/* {queryComplete ? 'Join Room' : 'Loading...'} */}
         {/* </Text> */}
       {/* </TouchableOpacity> */}
-      <PrimaryButton text={"Join Room"} disabled={!queryComplete} onPress={() => setCallActive(true)} />
+      <PrimaryButton text={"Odaya gir"} disabled={!queryComplete} onPress={() => setCallActive(true)} />
       </View>
       {/* </ImageBackground> */}
     </View>
