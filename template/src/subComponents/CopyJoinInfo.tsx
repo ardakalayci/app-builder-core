@@ -42,7 +42,7 @@ const ParticipantView = (props: any) => {
     variables: {passphrase: phrase},
   });
   const copyToClipboard = () => {
-    Toast.show({ text1: 'Copied to Clipboard', visibilityTime: 1000 });
+    Toast.show({ text1: 'Kopyalama işlemi gerçekleşti', visibilityTime: 1000 });
     if (data && !loading) {
       let stringToCopy = '';
       if ($config.FRONTEND_ENDPOINT) {

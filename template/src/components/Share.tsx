@@ -47,7 +47,7 @@ const Share = (props: any) => {
   };
 
   const copyToClipboard = () => {
-    Toast.show({ text1: 'Copied to Clipboard', visibilityTime: 1000 });
+    Toast.show({ text1: 'Kopyalama işlemi gerçekleşti', visibilityTime: 1000 });
     let stringToCopy = '';
 
     $config.FRONTEND_ENDPOINT
@@ -79,7 +79,7 @@ PSTN Pin: ${pstn.dtmf}`)
   };
 
   const copyHostUrl = () => {
-    Toast.show({ text1: 'Copied to Clipboard',  visibilityTime: 1000});
+    Toast.show({ text1: 'Kopyalama işlemi gerçekleşti',  visibilityTime: 1000});
     let stringToCopy = '';
     $config.FRONTEND_ENDPOINT
       ? (stringToCopy += `${$config.FRONTEND_ENDPOINT}/${urlHost}`)
@@ -90,7 +90,7 @@ PSTN Pin: ${pstn.dtmf}`)
   };
 
   const copyAttendeeURL = () => {
-    Toast.show({ text1: 'Copied to Clipboard',  visibilityTime: 1000});
+    Toast.show({ text1: 'Kopyalama işlemi gerçekleşti',  visibilityTime: 1000});
     let stringToCopy = '';
     $config.FRONTEND_ENDPOINT
       ? (stringToCopy += `${$config.FRONTEND_ENDPOINT}/${urlView}`)
@@ -101,7 +101,7 @@ PSTN Pin: ${pstn.dtmf}`)
   };
 
   const copyPstn = () => {
-    Toast.show({ text1: 'Copied to Clipboard',  visibilityTime: 1000});
+    Toast.show({ text1: 'Kopyalama işlemi gerçekleşti',  visibilityTime: 1000});
     let stringToCopy = `PSTN Number: ${pstn?.number} PSTN Pin: ${pstn?.dtmf}`;
     Clipboard.setString(stringToCopy);
   }
@@ -127,7 +127,7 @@ PSTN Pin: ${pstn.dtmf}`)
               <View style={{width: '80%'}}>
               <Text style={style.urlTitle}>
                 {$config.FRONTEND_ENDPOINT || platform === 'web'
-                ? "Attendee URL" : "Attendee ID"}
+                ? "Katılımcı URL" : "Katılımcı ID"}
               </Text>
               <View style={style.urlHolder}>
                 <Text style={style.url}>
@@ -210,7 +210,7 @@ PSTN Pin: ${pstn.dtmf}`)
         )}
         <PrimaryButton
           onPress={() => enterMeeting()}
-          text={'Start Meeting (as host)'}
+          text={'Görüşmeyi başlat (Host olarak)'}
         />
         <View style={{height: 10}} />
         <SecondaryButton
