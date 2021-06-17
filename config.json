@@ -6,7 +6,7 @@
   "APP_ID": "b8c2ef0f986541a8992451c07d30fb4b",
   "PRIMARY_COLOR": "#9e0bb5",
   "FRONTEND_ENDPOINT": "",
-  "BACKEND_ENDPOINT": "http://ckps618ur506847jwafdq8g23.herokuapp.com",
+  "BACKEND_ENDPOINT": "https://ckps618ur506847jwafdq8g23.herokuapp.com",
   "PSTN": false,
   "PRECALL": true,
   "CHAT": true,
