@@ -83,7 +83,7 @@ const Precall = (props: any) => {
                     marginTop: 5,
                     color: $config.PRIMARY_COLOR,
                   }}>
-                  Audio
+                  Ses
                 </Text>
               </View>
             </LocalUserContext>
